@@ -18,7 +18,32 @@ It is common industry practice for PowerShell scripts to handle:
 
 <hr />
 
-## 2. Supplemental Resources
+## 2. Cmdlets, Functions, and Executable Commands
+
+PowerShell **cmdlets** are commands used for performing administrative tasks. They can access file system, registry, and other data via data providers. PowerShell 7.4 includes 1,656 pre-installed cmdlets (in comparison, PowerShell 1.0 had 129). Some purposes of cmdlets include:
+
+* Selecting, Modifying, and Deleting Flow Permissions and Approvals.
+* Selecting, Modifying, and Deleting Network Connections and Connection Permissions.
+* Selecting, Adding, and Deleting URL Patterns.
+
+PowerShell **functions** are blocks of reusable, specialized code that can be called to conduct specific tasks. They are commonly written and/or called inside of PowerShell scripts. These include both simple functions and advanced functions (which allow for various forms of parameters, including dynamic, named, positional, and switched parameters).
+
+Powershell's standalone **executable commands** allow for executable files/programs to be called and used (such as ones of the popular '.exe' Windows file extension). Three commands used to run executable files in PowerShell include `invoke-expression`, `start-process`, and `.\`.
+
+PowerShell **scripts** rely on cmdlets to perform sequences of operations for the purpose of process automation. Examples of common verbs at the beginning of cmdlet names include:
+
+* *Get* (for selecting data).
+  + Examples: `Get-Item`, `Get-Process`, `Get-Service`.
+* *Set* (for modifying component data, such as property assignments).
+  + Examples: `Set-Service`, `Set-ItemProperty`, `Set-Acl`. 
+* *Remove* (for deleting data).
+  + Examples: `Remove-Item`, `Remove-Service`, `Remove-Job`.
+
+Ultimately, PowerShell script files are sets of instructions to be followed by the processor to achieve task automation.
+
+<hr />
+
+## 3. Supplemental Resources
 
 * *[Official Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)*
 * *[Official Microsoft Guide on Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)*
