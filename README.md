@@ -13,7 +13,7 @@
 
 ## <a name="common">1. Common Practice</a>
 
-It is common industry practice for PowerShell scripts to handle:
+**It is common industry practice for PowerShell scripts to handle:**
 
 * File, process, service, and user management. 
 * Task scheduling (PowerShell's built-in Task Scheduler can also be utilized and referenced). 
@@ -21,16 +21,27 @@ It is common industry practice for PowerShell scripts to handle:
 * Executions of other scripts (e.g., batch script integration).
 * Other everyday network activities.
 
-Examples of more specific tasks that PowerShell scripts can handle include:
+**Examples of more specific tasks that PowerShell scripts can handle include:**
 
+* Creating and updating user accounts (including their permissions, user data, and group memberships), for such purposes as organizational onboarding/offboarding and department changes.
 * Automatically scanning devices to discover, disable, and/or remove unauthorized apps.
-* Automating routine maintenance tasks via the Windows Task Manager, preventing various human errors and freeing up time.
+* Automating routine maintenance tasks (e.g., Windows Update, backing up systems, disk cleanup, generating inventory/security audit/user activity reports) via the Windows Task Manager, preventing various human errors and freeing up time.
 * Monitoring and optimizing processor usage to mitigate security risks and vulnerabilities, increase performance, and avoid system downtime.
 * Reliably applying browser security settings and policies (e.g., cookie privacy restrictions, unauthorized downloads, password storage, unknown extensions) across systems, hardening the system against credential crackers.
 * Removing unwanted apps that drain system resources (bloatware), reducing attack surface and eliminating bottlenecks.
 * Dynamically improving help desk support ticket routing, delegating tickets based on rules (e.g., priority, type/nature of request, any other case-relevant details).
 * Assuring that insecure protocols are not permitted for usage (another means of hardening the system).
-  
+* Performing speedy system recovery while checking and correcting corrupted data and avoiding risks of contaminating protected (and otherwise important) data through human error.
+
+**Some best practices when scripting in PowerShell include:**
+
+* Only providing scripts with the permissions that are absolutely necessary for them to run as intended (adhering to the *principle of least privilege*).
+* Giving comments and variables self-documenting names, to make their purposes easy to understand for anyone consulting the code.
+* Protecting confidentiality by not directly coding Personally Identifiable Information (PII) and other sensitive data into scripts.
+* Testing scripts in sandboxes before committing them to production environments.
+* Activating logging, secure data transfer protocols, user input validation, and error handling mechanisms.
+  + Anticipate that there will be needs to debug issues and automatically respond to failures.
+
 <hr />
 
 ## <a name="cmdlets">2. Cmdlets and Functions</a>
