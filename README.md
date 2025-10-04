@@ -1,5 +1,7 @@
 # Intro to PowerShell Automation Overview Guide
 
+**Description/Overview:** Microsoft PowerShell is a multi-platform (although it is intended for Windows integration) process automation and configuration management solution. It can be conceptualized as containing three components: an interactive command-line shell program, a configuration management framework, and a scripting language. For networking and systems professionals, PowerShell scripts provide automation for routine and mission-critical processes (including for remote and hybrid production environments, as an alternative to strictly on-premises device management), mitigating the odds of human error and freeing up time to work on other assignments. For activities such as implementing and reinforcing security measures, performing system maintenance, onboarding and offboarding users, adding or swapping devices (even in highly scalable environments), and routine task scheduling, the potential of PowerShell scripts is well evident.
+
 #### Table of Contents
 
 1. [Common Practice](#common)
@@ -9,20 +11,26 @@
 
 <hr />
 
-**Description/Overview:** Microsoft PowerShell is a multi-platform (although it is intended for Windows integration) process automation and configuration management solution. It can be conceptualized as containing three components: an interactive command-line shell program, a configuration management framework, and a scripting language. For networking and systems professionals, PowerShell scripts provide automation for routine and mission-critical processes (including for remote and hybrid production environments, as an alternative to strictly on-premises device management), mitigating the odds of human error and freeing up time to work on other assignments. For activities such as implementing and reinforcing security measures, performing system maintenance, onboarding and offboarding users, adding or swapping devices (even in highly scalable environments), and routine task scheduling, the potential of PowerShell scripts is well evident.
-
-<hr />
-
 ## <a name="common">1. Common Practice</a>
 
 It is common industry practice for PowerShell scripts to handle:
 
-* File, Process, Service, and User Management. 
-* Task Scheduling (PowerShell's built-in Task Scheduler can also be utilized and referenced). 
-* Active Directory (AD) Management.
-* Executions of Other Scripts (e.g., batch script integration).
-* Other Common Network Activities.
+* File, process, service, and user management. 
+* Task scheduling (PowerShell's built-in Task Scheduler can also be utilized and referenced). 
+* Active Directory (AD) management.
+* Executions of other scripts (e.g., batch script integration).
+* Other everyday network activities.
 
+Examples of more specific tasks that PowerShell scripts can handle include:
+
+* Automatically scanning devices to discover, disable, and/or remove unauthorized apps.
+* Automating routine maintenance tasks via the Windows Task Manager, preventing various human errors and freeing up time.
+* Monitoring and optimizing processor usage to mitigate security risks and vulnerabilities, increase performance, and avoid system downtime.
+* Reliably applying browser security settings and policies (e.g., cookie privacy restrictions, unauthorized downloads, password storage, unknown extensions) across systems, hardening the system against credential crackers.
+* Removing unwanted apps that drain system resources (bloatware), reducing attack surface and eliminating bottlenecks.
+* Dynamically improving help desk support ticket routing, delegating tickets based on rules (e.g., priority, type/nature of request, any other case-relevant details).
+* Assuring that insecure protocols are not permitted for usage (another means of hardening the system).
+  
 <hr />
 
 ## <a name="cmdlets">2. Cmdlets and Functions</a>
