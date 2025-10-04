@@ -2,11 +2,19 @@
 
 **TODO:** An introductory guide to PowerShell's potential for systems automation.
 
+#### Table of Contents
+
+1. [Common Practice](#common)
+2. [Cmdlets, Functions, and Executable Commands](#cmdlets)
+3. [Supplemental Resources](#supplemental)
+
+<hr />
+
 **Description/Overview:** Microsoft PowerShell is a multi-platform (although it is intended for Windows integration) process automation and configuration management solution. It can be conceptualized as containing three components: an interactive command-line shell program, a configuration management framework, and a scripting language. For networking and systems professionals, PowerShell scripts provide automation for routine and mission-critical processes (including for remote and hybrid production environments, as an alternative to strictly on-premises device management), mitigating the odds of human error and freeing up time to work on other assignments. For activities such as implementing and reinforcing security measures, performing system maintenance, onboarding and offboarding users, adding or swapping devices (even in highly scalable environments), and routine task scheduling, the potential of PowerShell scripts is well evident.
 
 <hr />
 
-## 1. Common Practice
+## <a name="common">1. Common Practice</a>
 
 It is common industry practice for PowerShell scripts to handle:
 
@@ -18,7 +26,7 @@ It is common industry practice for PowerShell scripts to handle:
 
 <hr />
 
-## 2. Cmdlets, Functions, and Executable Commands
+## <a name="cmdlets">2. Cmdlets, Functions, and Executable Commands</a>
 
 PowerShell **cmdlets** are commands used for performing administrative tasks. They can access file system, registry, and other data via data providers. PowerShell 7.4 includes 1,656 pre-installed cmdlets (in comparison, PowerShell 1.0 had 129). Some purposes of cmdlets include:
 
@@ -43,7 +51,7 @@ Ultimately, PowerShell script files are sets of instructions to be followed by t
 
 <hr />
 
-## 3. Supplemental Resources
+## <a name="supplemental">3. Supplemental Resources</a>
 
 * *[Official Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)*
 * *[Official Microsoft Guide on Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)*
