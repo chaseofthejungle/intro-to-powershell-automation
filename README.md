@@ -1,12 +1,11 @@
 # Intro to PowerShell Automation Overview Guide
 
-**TODO:** An introductory guide to PowerShell's potential for systems automation.
-
 #### Table of Contents
 
 1. [Common Practice](#common)
-2. [Cmdlets, Functions, and Executable Commands](#cmdlets)
-3. [Supplemental Resources](#supplemental)
+2. [Cmdlets and Functions](#cmdlets)
+3. [Three Common Ways to Run Executables](#executables)
+4. [Supplemental Resources](#supplemental)
 
 <hr />
 
@@ -26,7 +25,7 @@ It is common industry practice for PowerShell scripts to handle:
 
 <hr />
 
-## <a name="cmdlets">2. Cmdlets, Functions, and Executable Commands</a>
+## <a name="cmdlets">2. Cmdlets and Functions</a>
 
 PowerShell **cmdlets** are commands used for performing administrative tasks. They can access file system, registry, and other data via data providers. PowerShell 7.4 includes 1,656 pre-installed cmdlets (in comparison, PowerShell 1.0 had 129). Some purposes of cmdlets include:
 
@@ -35,8 +34,6 @@ PowerShell **cmdlets** are commands used for performing administrative tasks. Th
 * Selecting, Adding, and Deleting URL Patterns.
 
 PowerShell **functions** are blocks of reusable, specialized code that can be called to conduct specific tasks. They are commonly written and/or called inside of PowerShell scripts. These include both simple functions and advanced functions (which allow for various forms of parameters, including dynamic, named, positional, and switched parameters).
-
-Powershell's standalone **executable commands** allow for executable files/programs to be called and used (such as ones of the popular '.exe' Windows file extension). Three commands used to run executable files in PowerShell include `invoke-expression`, `start-process`, and `.\`.
 
 PowerShell **scripts** rely on cmdlets to perform sequences of operations for the purpose of process automation. Examples of common verbs at the beginning of cmdlet names include:
 
@@ -51,7 +48,23 @@ Ultimately, PowerShell script files are sets of instructions to be followed by t
 
 <hr />
 
-## <a name="supplemental">3. Supplemental Resources</a>
+## <a name="executables">3. Three Common Ways to Run Executables</a>
+
+PowerShell has *three common ways* to run standalone executables. These allow for executable files/programs to be called and used (such as ones of the popular '.exe' Windows file extension):
+
+* The `Invoke-Expression` command: This allows strings and scripts to be executed immediately in the PowerShell session. Although more than one statement can be processed at once, strings are treated as code, so only utilizing trusted input is essential for security.
+  + Full paths in command strings should be written in quotes. Arguments and options can be added after the path in the command string.
+    - Common use cases for the Invoke-Expression approach include *centralized management of remote scripts for multiple servers*, *executing user-defined commands without writing to them*, *dynamic command execution* (useful for monitoring and managing system resources, evaluating data inputted by users during runtime, and making instant decisions), and *generating and executing commands based on config files and variables*.
+* The `start-process` cmdlet: This provides you with control over operations, with executables running as *individual processes*. By not parsing strings directly through sessions, external code is processed more safely. Arguments and options can be added after the file name.
+  + This cmdlet is often used to execute processes in the background without displaying windows (although it can also be used to stylize windows), using the `-WindowStyle Hidden` parameter. Output can be captured if you specify redirection to a location, using parameters such as `-RedirectStandardError` and `-RedirectStandardOutput`.
+    - Common use cases for the start-process approach include *automating background tasks* (e.g., scheduling system backups during non-production hours, having reporting apps run hidden in the background to generate reports) and *software deployments* (e.g., automating upgrades and patches without interrupting users).
+* `.\`: This is also referred to as *direct execution*, because it allows you to run a file immediately from your current working directory in PowerShell. If you need to execute a trusted, locally-stored program or script without further configuration beyond the default, this is a common sense way to do so. Any results from the program/script are immediately outputted into the console window.
+  + Direct execution is performed by typing `.\` and then the file's name. You would need to be in the directory containing the file to do this. Arguments and options can be added after the file name.
+    - Common use cases for the direct execution approach include *configuration updates* (retrieving settings from config files without generating new scripts for each update), *dynamic script execution* (executing commands as strings, providing real-time network configuration changes without modifying each environment's scripts), and *local script testing/troubleshooting* (especially prior to deployment).
+
+<hr />
+
+## <a name="supplemental">4. Supplemental Resources</a>
 
 * *[Official Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)*
 * *[Official Microsoft Guide on Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)*
