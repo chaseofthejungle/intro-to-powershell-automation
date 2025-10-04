@@ -15,3 +15,11 @@ It is common industry practice for PowerShell scripts to handle:
 * Active Directory (AD) Management.
 * Executions of Other Scripts (e.g., batch script integration).
 * Other Common Network Activities.
+
+<hr />
+
+## 2. Supplemental Resources
+
+* *[Official Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)*
+* *[Official Microsoft Guide on Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)*
+* *[PowerShell Gallery (Website for Distributing PowerShell Code)](https://www.powershellgallery.com/)*
