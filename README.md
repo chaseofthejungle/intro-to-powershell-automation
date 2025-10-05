@@ -7,7 +7,8 @@
 1. [Common Practice](#common)
 2. [Cmdlets and Functions](#cmdlets)
 3. [Three Common Ways to Run Executables](#executables)
-4. [Supplemental Resources](#supplemental)
+4. [PowerShell Automation Tools](#autotools)
+5. [Supplemental Resources](#supplemental)
 
 <hr />
 
@@ -83,7 +84,28 @@ PowerShell has *three common ways* to run standalone executables. These allow fo
 
 <hr />
 
-## <a name="supplemental">4. Supplemental Resources</a>
+## <a name="autotools">4. PowerShell Automation Tools</a>
+
+**Examples of PowerShell automation tools include:**
+
+* Active Directory (AD) Module
+* Attune
+* Azure Automation
+* Azure Command Line Interface
+* Cimitra
+* Posh-SSH
+* PowerShell Core
+* PowerShell Desired State Configuration (DSC)
+* PowerShell Gallery
+* PowerShell Integrated Scripting Environment (ISE)
+* PowerShell Package Managers
+* PowerShell Remoting
+* PowerShell Universal
+* ScriptRunner
+
+<hr />
+
+## <a name="supplemental">5. Supplemental Resources</a>
 
 * *[Official Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)*
 * *[Official Microsoft Guide on Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)*
