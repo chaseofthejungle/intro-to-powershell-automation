@@ -86,22 +86,18 @@ PowerShell has *three common ways* to run standalone executables. These allow fo
 
 ## <a name="autotools">4. PowerShell Automation Tools</a>
 
-**Examples of PowerShell automation tools include:**
+*Examples of PowerShell automation tools include:*
 
-* Active Directory (AD) Module
-* Attune
-* Azure Automation
-* Azure Command Line Interface
-* Cimitra
-* Posh-SSH
-* PowerShell Core
-* PowerShell Desired State Configuration (DSC)
-* PowerShell Gallery
-* PowerShell Integrated Scripting Environment (ISE)
-* PowerShell Package Managers
-* PowerShell Remoting
-* PowerShell Universal
-* ScriptRunner
+* **[Active Directory (AD) Module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/):** A PowerShell module that organizes cmdlets into groups for managing Active Directory configurations, domains, and database instances.
+* **[Attune](https://attuneops.io/):** Runs PowerShell (and bash) scripts, both locally and remotely.
+* **[Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview):** Remotely provides configuration management, process automation, and other features.
+* **[Azure Command-Line Interface](https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest):** Can combine commands into PowerShell scripts.
+* **[Cimitra](https://cimitra.com/):** Provides a means of sharing automation scripts.
+* **[Posh-SSH](https://www.powershellgallery.com/packages/Posh-SSH/):** Utilizes Secure Shell (SSH) to automate processes remotely.
+* **[PowerShell Desired State Configuration (DSC)](https://learn.microsoft.com/en-us/powershell/scripting/dsc/overview):** Can automatically configure multiple devices and check that they are executing the same configurations.
+* **[PowerShell Gallery](https://www.powershellgallery.com/):** A centralized repository/website for distributing PowerShell scripts and modules. 
+* **[PowerShell Universal](https://www.powershelluniversal.com/):** Provides a dashboard and in-browser consoles for streamlining automation workflows, and securing, scheduling, auditing, and running PowerShell scripts.
+* **[ScriptRunner](https://www.scriptrunner.com/):** An IT automation platform that can use PowerShell (among other technologies) for process automation and automation workflow customization.
 
 <hr />
 
